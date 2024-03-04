@@ -1,0 +1,39 @@
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> 
+            <i class="fa-solid fa-bars" style="color: #ffffff;" id="header-toggle"></i>
+        </div>
+    
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a class="nav_logo" id="logo">
+                    <img src="../../../assets/img/logoIBB.png" alt="">
+                </a>
+                <div class="nav_list">
+                    <a routerLink="/" routerLinkActive="active" class="nav_link "> <i class="fa-solid fa-calendar-days" title="escala"></i>
+                        <span class="nav_name">Escala</span>
+                    </a>
+                    <a routerLink="/lista-ministerio" routerLinkActive="active" class="nav_link"> <i class="fa-solid fa-house-flag" title="ministerios"></i>
+                        <span class="nav_name">Ministérios</span>
+                    </a>
+                    <a routerLink="/lista-evento" routerLinkActive="active" class="nav_link"> <i class="fa-regular fa-calendar-check" title="cultos"></i>
+                        <span class="nav_name">Cultos</span>
+                    </a>
+                    <a routerLink="/lista-membro" routerLinkActive="active" class="nav_link"> <i class="fa-solid fa-users" title="membros"></i>
+                        <span class="nav_name">Membros</span>
+                    </a>
+                    <a routerLink="/" routerLinkActive="active" class="nav_link"> <i class="fa-solid fa-user" title="meu perfil"></i>
+                        <span class="nav_name">Meu perfil</span>
+                    </a>
+
+                </div>
+            </div>
+            <a id="logout" class="nav_link" (click)="logout()">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span> Sair </span>
+            </a>
+        </nav>
+    </div>
+</body>
